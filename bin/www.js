@@ -1,11 +1,13 @@
+#!/usr/bin/env node
+
 /**
  * Module dependencies.
  */
 
 import {app} from "../app.js";
 
-import createDebugMessages from 'debug';
-const debug = createDebugMessages('nodebasis:server');
+// import createDebugMessages from 'debug';
+// const debug = createDebugMessages('nodebasis:server');
 
 import http from 'http';
 
@@ -28,7 +30,7 @@ var server = http.createServer(app);
 
 server.listen(port);
 server.on('error', onError);
-server.on('listening', onListening);
+// server.on('listening', onListening);
 
 
 console.log('/bin/www.js: Anwendung an Port ' + port + ' gestartet');
@@ -83,7 +85,6 @@ function onError(error) {
 
 /**
  * Event listener for HTTP server "listening" event.
- */
 
 function onListening() {
   var addr = server.address();
@@ -92,3 +93,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+  
+ */
