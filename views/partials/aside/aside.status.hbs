@@ -1,0 +1,10 @@
+								<h3>{{@root.user.firstname}} {{@root.user.lastname}}</h3>
+								<p>{{@root.user.email}}</p>
+								<p>
+									Benutzernummer:&nbsp;{{@root.user.id}}<br>
+									Benutzername:&nbsp;{{@root.user.username}}<br>
+									Rolle:&nbsp;<span class="gross">{{@root.user.roleName}}</span><br>
+									Status:&nbsp;{{@root.user.statusName}}<br>									
+									Abteilung(en): {{#each @root.user.division}} {{this}}{{#if @last}}{{else}}, {{/if}}{{/each}}
+								</p>
+							

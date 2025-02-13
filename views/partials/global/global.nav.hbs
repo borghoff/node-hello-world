@@ -1,0 +1,7 @@
+                <ul>
+				{{#each sections}} 
+					{{#with this}}
+						<li data-nav-tab-id="{{this.id}}" data-nav-tab-pos="{{this.pos}}" class="{{this.class}} {{#if (eq ../this.iam this.id)}} offen{{/if}}"><a href="{{this.link}}" id="{{this.id}}">{{this.name}}</a></li>
+					{{/with}}
+				{{/each}}
+				</ul>
