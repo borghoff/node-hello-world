@@ -16,7 +16,10 @@ import http from 'http';
  */
 
 var port = normalizePort(process.env.PORT || '8080');
-app.set('port', port);
+
+console.log(port);
+
+// app.set('port', port);
 
 /**
  * Create HTTP server.
@@ -35,6 +38,7 @@ server.on('error', onError);
 
 
 console.log('/bin/www.js: Anwendung an Port ' + port + ' gestartet');
+console.log('/bin/www.js: Anwendung an Port ' + process.env.PORT + ' gestartet');
 
 /**
  * Normalize a port into a number, string, or false.
