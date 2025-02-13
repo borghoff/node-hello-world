@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url';
 import helmet from 'helmet';
 
 import 'dotenv/config';
-const port = process.env.PORT || 3000;
-console.log(`Trying to run app on port ${port}`);
+// const port = process.env.PORT || 3000;
+// console.log(`Trying to run app on port ${port}`);
 
 export const __filename = fileURLToPath(import.meta.url);
 export const __dirname = path.dirname(__filename);
